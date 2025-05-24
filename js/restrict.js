@@ -1,5 +1,4 @@
 // Restriction of origin
-function checkOrigin() {
     if (window === window.top) {
         // Do nothing, page is from the origin
     } else {
@@ -11,7 +10,3 @@ function checkOrigin() {
         forbiddenMessage.style.marginTop = '20vh';
         document.body.appendChild(forbiddenMessage);
     }
-}
-
-// Call the function
-checkOrigin();
