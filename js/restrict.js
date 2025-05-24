@@ -8,6 +8,7 @@ function checkOrigin() {
         console.log("3rd party embed");
         // Update a DOM element
         document.getElementById("originStatus").innerText = "3rd party embed";
+        document.body.innerHTML = "<h2>403 Forbidden</h2>";
     }
 }
 
