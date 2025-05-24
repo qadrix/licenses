@@ -4,10 +4,10 @@ if (window === window.top) {
 } else {
     // Clear the entire page and show a 403 Forbidden message
     document.body.innerHTML = '';
+    document.open()
     const forbiddenMessage = document.createElement('h1');
     forbiddenMessage.textContent = '403 Forbidden';
     forbiddenMessage.style.textAlign = 'center';
     forbiddenMessage.style.marginTop = '20vh';
     document.body.appendChild(forbiddenMessage);
-    document.write("test");
 }
