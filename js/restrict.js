@@ -1,14 +1,15 @@
 // Restriction of origin
 function checkOrigin() {
     if (window === window.top) {
-        console.log("Verified");
-        // You can also update a DOM element here
-        document.getElementById("originStatus").innerText = "Verified";
+        // Do nothing, page is from the origin
     } else {
-        console.log("3rd party embed");
-        // Update a DOM element
-        document.getElementById("originStatus").innerText = "3rd party embed";
-        document.body.innerHTML = "<h2>403 Forbidden</h2>";
+        // Clear the entire page and show a 403 Forbidden message
+        document.body.innerHTML = '';
+        const forbiddenMessage = document.createElement('h1');
+        forbiddenMessage.textContent = '403 Forbidden';
+        forbiddenMessage.style.textAlign = 'center';
+        forbiddenMessage.style.marginTop = '20vh';
+        document.body.appendChild(forbiddenMessage);
     }
 }
 
