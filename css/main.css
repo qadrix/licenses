@@ -1,0 +1,147 @@
+::selection {
+    background: #000000;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #000000;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title{
+    font-size: 35px;
+    font-family: sans-serif, arial;
+    text-decoration: none;
+    color: #000000;
+}
+
+.header-title:active{
+    color: #ffffff;
+    background: #000000;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-option{
+    margin-left: 25px;
+    font-family: sans-serif, arial;
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu-option-active{
+    background: #000000;
+    color: #ffffff;
+}
+
+.page-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+}
+
+.copyright{
+    font-size: 16px;
+    font-family: sans-serif, arial;
+    text-align: center;
+}
+
+/* Styles for dark mode */
+@media (prefers-color-scheme: dark) {
+    body{
+        background: #000000;
+    }
+
+    ::selection {
+        background: #ffffff;
+        color: #000000;
+        text-shadow: none;
+    }
+
+    ::-moz-selection {
+        background: #ffffff;
+        color: #000000;
+        text-shadow: none;
+    }
+
+    .noselect {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+        supported by Chrome, Edge, Opera and Firefox */
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-title{
+        font-size: 35px;
+        font-family: sans-serif, arial;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .header-title:active{
+        color: #000000;
+        background: #ffffff;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu-option{
+        margin-left: 25px;
+        font-family: sans-serif, arial;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .menu-option-active{
+        background: #ffffff;
+        color: #000000;
+    }
+
+    .page-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        /*align-items: center;*/
+    }
+
+    .copyright{
+        font-size: 16px;
+        font-family: sans-serif, arial;
+        text-align: center;
+        color: #ffffff;
+    }
+}
